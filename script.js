@@ -72,10 +72,89 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Profile card flip
+    // Slide navigation for profile cards
+    const slides = document.querySelectorAll('.slide-container .slide');
+    const leftArrow = document.getElementById('left-arrow');
+    const rightArrow = document.getElementById('right-arrow');
+    let currentSlide = 0;
+    let isAnimating = false;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = (i === index) ? 'block' : 'none';
+            slide.classList.remove('fade-in', 'fade-out');
+        });
+    }
+
+    function animateSlideChange(newIndex) {
+        if (isAnimating || newIndex === currentSlide) return;
+        isAnimating = true;
+
+        const current = slides[currentSlide];
+        const next = slides[newIndex];
+
+        // Start fade out of current slide
+        current.classList.add('fade-out');
+
+        current.addEventListener('animationend', function onFadeOut() {
+            current.removeEventListener('animationend', onFadeOut);
+            current.style.display = 'none';
+            current.classList.remove('fade-out');
+
+            // Show next slide and fade in
+            next.style.display = 'block';
+            next.classList.add('fade-in');
+
+            next.addEventListener('animationend', function onFadeIn() {
+                next.removeEventListener('animationend', onFadeIn);
+                next.classList.remove('fade-in');
+                currentSlide = newIndex;
+                isAnimating = false;
+            });
+        });
+    }
+
+    showSlide(currentSlide);
+
+    if(leftArrow) {
+        leftArrow.addEventListener('click', () => {
+            const newIndex = (currentSlide - 1 + slides.length) % slides.length;
+            animateSlideChange(newIndex);
+        });
+    }
+
+    if(rightArrow) {
+        rightArrow.addEventListener('click', () => {
+            const newIndex = (currentSlide + 1) % slides.length;
+            animateSlideChange(newIndex);
+        });
+    }
+
+    
+    // Navigation arrows (if implemented)
+    const leftArrow1 = document.getElementById('left-arrow1');
+    const rightArrow1 = document.getElementById('right-arrow1');
+    const pages = ['android.html', 'web.html', 'windows.html', 'lua.html', 'hardware.html'];
+    let currentPageIndex = pages.indexOf(window.location.pathname.split('/').pop());
+
+    if(leftArrow1) {
+        leftArrow1.addEventListener('click', () => {
+            currentPageIndex = (currentPageIndex - 1 + pages.length) % pages.length;
+            window.location.href = pages[currentPageIndex];
+        });
+    }
+
+    if(rightArrow1) {
+        rightArrow1.addEventListener('click', () => {
+            currentPageIndex = (currentPageIndex + 1) % pages.length;
+            window.location.href = pages[currentPageIndex];
+        });
+    }
+
+    // Flip card toggle
     const flipButton = document.getElementById('flip-button');
-    const card = document.querySelector('.card');
-    if(flipButton && card) {
+    const card = document.querySelector('.card-container .card');
+    if (flipButton && card) {
         flipButton.addEventListener('click', () => {
             card.classList.toggle('flipped');
         });
@@ -93,26 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    }
-
-    // Navigation arrows (if implemented)
-    const leftArrow = document.getElementById('left-arrow');
-    const rightArrow = document.getElementById('right-arrow');
-    const pages = ['android.html', 'web.html', 'windows.html', 'lua.html', 'hardware.html'];
-    let currentPageIndex = pages.indexOf(window.location.pathname.split('/').pop());
-
-    if(leftArrow) {
-        leftArrow.addEventListener('click', () => {
-            currentPageIndex = (currentPageIndex - 1 + pages.length) % pages.length;
-            window.location.href = pages[currentPageIndex];
-        });
-    }
-
-    if(rightArrow) {
-        rightArrow.addEventListener('click', () => {
-            currentPageIndex = (currentPageIndex + 1) % pages.length;
-            window.location.href = pages[currentPageIndex];
         });
     }
 });

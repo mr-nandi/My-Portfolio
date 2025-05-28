@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nagarajan Mohan</title>
     <link rel="icon" href="Assets/boy.png" />
     <link rel="stylesheet" href="style.css" />
@@ -11,43 +11,68 @@
     <header>
         <div class="container">
             <h1>Profile</h1>
-            
         </div>
     </header>
-       <section id="profile" class="profile-section">
+     <section id="profile" class="profile-section1">
             <div css="container">
                 <section id ="home" >
                     <a href="index.html" class ="home"></a>
                 </section>
-                <div class="card-container" id="card-container">
-                    <div class="card">
-                        <div class="card-front">
-                            <h3>Personal Details</h3>
-                            <img src="Assets/boy (1).png" alt="Nagarajan Mohan" class="profile_image" />
-                            <p><strong>Nagarajan Mohan</strong> </p>
-                            <p><strong>UAV Software Developer</strong> </p>
-                            <p>mnagarajan0704@gmail.com </p>
-                            <p>Chennai, Tamilnadu, India</p>
-                        </div>
-                        <div class="card-back">
-                            <h3>Experience & Knowledge</h3>
-                            <p><strong>Experience:</strong> </p>
-                            <P>3 years in Software Development </P> 
-                            <p><strong>Knowledge:</strong></p>
-                            <ul>
-                                <li>Android Application Development</li>
-                                <li>Web Application Development</li>
-                                <li>Windows Application Development</li>
-                                <li>LUA Script</li>
-                                <li>Hardware Operations</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <button id="flip-button" class="btn-primary">Flip Card</button>
+            <div class="slide-container" id="slide-container">
+                <article class="card slide" tabindex="0" aria-label="Personal Details card">
+                    <img src="Assets/boy (1).png" alt="Nagarajan Mohan" class="profile_image" />
+                    <h3><strong>Nagarajan Mohan</strong></h3>
+                    <h5>UAV Software Developer</h5>
+                    <h5>mnagarajan0704@gmail.com</h5>
+                    <h5>Chennai, Tamilnadu, India</h5>
+                </article>
+                <article class="card slide" tabindex="0" aria-label="Experience and Knowledge card">
+                    <h4><strong>Experience & Knowledge</strong></h4>
+                    <h4>Experience:</h4>
+                    <p>3 years in Software Development</p>
+                    <h4>Knowledge Areas:</h4>
+                    <ul>
+                        <li>Android Application Development</li>
+                        <li>Web Application Development</li>
+                        <li>Windows Application Development</li>
+                        <li>LUA Script</li>
+                        <li>Hardware Operations</li>
+                    </ul>
+                </article>
+                <article class="card slide" tabindex="0" aria-label="Degrees card">
+                    <h4>Degrees</h4>
+                    <ul>
+                        <li>Bachelor of Computer Applications (2020)</li>
+                        <li>Master of Computer Applications(2022)</li>
+                    </ul>
+                    <h4>Degree Details</h4>
+                    <p>BCA:  Focused on computer architecture, algorithms, 
+                        and software engineering principles, 
+                        providing a foundational understanding of software development.</p>
+                    <p>MCA: Concentrated on advanced software systems, design patterns, 
+                        and project management, enhancing my ability to 
+                        design and manage complex software projects.</p>
+                </article>
+                <article class="card slide" tabindex="0" aria-label="Certificate Courses card">
+                    <h4>Certificate Courses</h4>
+                    <ul>
+                        <li>Java Full Stack Course, Edubridge Institute, Mumbai (January 2023)</li>
+                        <li>AI Drone in Machine Evaluation Webinar (July 2023)</li>
+                        <li>Mobile App Development Workshop (June 2021)</li>
+                    </ul>
+                    <h4>About Certificates</h4>
+                    <p>Each certification has enhanced my skills and enabled me to build scalable, 
+                        maintainable software solutions.</p>
+                    <p>I am committed to continuous learning and professional development.</p>
+                </article>
             </div>
-        </section>
-
+            <div class="slide-nav">
+                <button id="left-arrow" aria-label="Previous Page">&#9664;</button>
+                <button id="right-arrow" aria-label="Next Page">&#9654;</button>
+            </div>
+        </div>
+    </section>
+    <button id="back-to-top" title="Back to top">&#8679;</button>
     <script type="module" src="script.js"></script>
 </body>
 </html>
