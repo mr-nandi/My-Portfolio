@@ -5,6 +5,7 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.1/firebase
 
 // Your Firebase configuration
 const firebaseConfig = {
+    apiKey: "AIzaSyDYL8otlGrTx6eJF2yS08PUqfeEwoevRdw",
     authDomain: "my-portfolio-29d15.firebaseapp.com",
     projectId: "my-portfolio-29d15",
     storageBucket: "my-portfolio-29d15.appspot.com",
