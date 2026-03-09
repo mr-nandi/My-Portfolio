@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebas
 import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDYL8otlGrTx6eJF2yS08PUqfeEwoevRdw",
+    
     authDomain: "my-portfolio-29d15.firebaseapp.com",
     projectId: "my-portfolio-29d15",
     storageBucket: "my-portfolio-29d15.appspot.com",
@@ -241,3 +241,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
