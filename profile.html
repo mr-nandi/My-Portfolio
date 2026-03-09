@@ -1,78 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nagarajan Mohan</title>
+    <title>Professional Profile | Nagarajan Mohan</title>
     <link rel="icon" href="Assets/boy.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 992px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .info-card h3 {
+            font-family: var(--font-heading);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--accent-primary);
+        }
+
+        .info-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .info-item h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .info-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>Profile</h1>
+        <div class="container logo">
+            <div class="profile-info">
+                <a href="index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem; color: inherit;">
+                    <img src="Assets/boy.png" alt="Nagarajan Mohan" />
+                    <span class="profile-name">Nagarajan Mohan</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <i class="ph ph-magnifying-glass search-icon"></i>
+                        <input type="text" class="search-input global-search" placeholder="Search..." />
+                        <div class="search-results global-search-results"></div>
+                    </div>
+                    <button class="theme-toggle" title="Toggle Theme">
+                        <i class="ph ph-sun theme-icon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
-     <section id="profile" class="profile-section1">
-            <div css="container">
-                <section id ="home" >
-                    <a href="index.html" class ="home"></a>
-                </section>
-            <div class="slide-container" id="slide-container">
-                <article class="card slide" tabindex="0" aria-label="Personal Details card">
-                    <img src="Assets/boy (1).png" alt="Nagarajan Mohan" class="profile_image" />
-                    <h3><strong>Nagarajan Mohan</strong></h3>
-                    <h5>UAV Software Developer</h5>
-                    <h5>mnagarajan0704@gmail.com</h5>
-                    <h5>Chennai, Tamilnadu, India</h5>
-                </article>
-                <article class="card slide" tabindex="0" aria-label="Experience and Knowledge card">
-                    <h4><strong>Experience & Knowledge</strong></h4>
-                    <h4>Experience:</h4>
-                    <p>3 years in Software Development</p>
-                    <h4>Knowledge Areas:</h4>
-                    <ul>
-                        <li>Android Application Development</li>
-                        <li>Web Application Development</li>
-                        <li>Windows Application Development</li>
-                        <li>LUA Script</li>
-                        <li>Hardware Operations</li>
-                    </ul>
-                </article>
-                <article class="card slide" tabindex="0" aria-label="Degrees card">
-                    <h4>Degrees</h4>
-                    <ul>
-                        <li>Bachelor of Computer Applications (2020)</li>
-                        <li>Master of Computer Applications(2022)</li>
-                    </ul>
-                    <h4>Degree Details</h4>
-                    <p>BCA:  Focused on computer architecture, algorithms, 
-                        and software engineering principles, 
-                        providing a foundational understanding of software development.</p>
-                    <p>MCA: Concentrated on advanced software systems, design patterns, 
-                        and project management, enhancing my ability to 
-                        design and manage complex software projects.</p>
-                </article>
-                <article class="card slide" tabindex="0" aria-label="Certificate Courses card">
-                    <h4>Certificate Courses</h4>
-                    <ul>
-                        <li>Java Full Stack Course, Edubridge Institute, Mumbai (January 2023)</li>
-                        <li>AI Drone in Machine Evaluation Webinar (July 2023)</li>
-                        <li>Mobile App Development Workshop (June 2021)</li>
-                    </ul>
-                    <h4>About Certificates</h4>
-                    <p>Each certification has enhanced my skills and enabled me to build scalable, 
-                        maintainable software solutions.</p>
-                    <p>I am committed to continuous learning and professional development.</p>
-                </article>
+
+    <main class="project-section" style="padding-top: 10rem;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h1 style="font-family: var(--font-heading); font-size: clamp(2.5rem, 6vw, 3.5rem);">Professional
+                    Profile</h1>
+                <p style="color: var(--text-secondary); font-size: 1.25rem;">UAV Software Developer & Integrated Systems
+                    Engineer</p>
+                <div style="margin-top: 2rem;">
+                    <a href="index.html" class="home" style="margin: 0 auto;"><i class="ph ph-house"></i></a>
+                </div>
             </div>
-            <div class="slide-nav">
-                <button id="left-arrow" aria-label="Previous Page">&#9664;</button>
-                <button id="right-arrow" aria-label="Next Page">&#9654;</button>
+
+            <div class="profile-grid">
+                <!-- Sidebar Info -->
+                <aside>
+                    <div class="info-card" style="text-align: center;">
+                        <img src="Assets/boy (1).png" alt="Nagarajan Mohan" class="about-image"
+                            style="margin-bottom: 1.5rem; width: 140px; height: 140px;">
+                        <h2 style="font-family: var(--font-heading);">Nagarajan Mohan</h2>
+                        <p style="color: var(--accent-primary); font-weight: 500;">Chennai, India</p>
+                        <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <a href="mailto:mnagarajan0704@gmail.com"
+                                style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">mnagarajan0704@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="ph ph-graduation-cap"></i> Education</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <h4>MCA</h4>
+                                <p>Master of Computer Applications (2022)</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>BCA</h4>
+                                <p>Bachelor of Computer Applications (2020)</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <section>
+                    <div class="info-card">
+                        <h3><i class="ph ph-briefcase"></i> Experience</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <h4>Senior UAV Software Developer</h4>
+                                <p>3+ Years in UAV domain. Expertise in integrated software systems, autonomous flight
+                                    logic, and hardware-software bridging.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="ph ph-certificate"></i> Certifications</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <h4>Java Full Stack Developer</h4>
+                                <p>Edubridge Institute, Mumbai (2023)</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>AI Drone in Machine Evaluation</h4>
+                                <p>Specialized Technical Webinar (2023)</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Mobile App Development</h4>
+                                <p>Professional Workshop (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="ph ph-code"></i> Technical Focus</h3>
+                        <div class="language-container" style="justify-content: flex-start; margin-bottom: 0;">
+                            <ul>
+                                <li>Android</li>
+                                <li>Web Systems</li>
+                                <li>LUA</li>
+                                <li>C# / .NET</li>
+                                <li>Embedded C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
-    <button id="back-to-top" title="Back to top">&#8679;</button>
+    </main>
+
+    <button id="back-to-top" title="Back to top"><i class="ph ph-arrow-up"></i></button>
     <script type="module" src="script.js"></script>
 </body>
+
 </html>

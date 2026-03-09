@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nagarajan Mohan</title>
+    <title>Hardware Knowledge | Nagarajan Mohan</title>
     <link rel="icon" href="Assets/boy.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>Hardware Knowledge</h1>
+        <div class="container logo">
+            <div class="profile-info">
+                <a href="index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem; color: inherit;">
+                    <img src="Assets/boy.png" alt="Nagarajan Mohan" />
+                    <span class="profile-name">Nagarajan Mohan</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <i class="ph ph-magnifying-glass search-icon"></i>
+                        <input type="text" class="search-input global-search" placeholder="Search..." />
+                        <div class="search-results global-search-results"></div>
+                    </div>
+                    <button class="theme-toggle" title="Toggle Theme">
+                        <i class="ph ph-sun theme-icon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
-    <section id="project" class="project-section">
+
+    <main class="project-section">
         <div class="container">
-            <section id="home" style="position: relative; display: flex; justify-content: center; align-items: center;">
-                <a href="index.html" class="home"></a>
-                <button id="left-arrow1" style="position: absolute; left: 10px; background: none; border: none; font-size: 2rem; cursor: pointer; color: #004080;">&#8592;</button>
-                <button id="right-arrow1" style="position: absolute; right: 10px; background: none; border: none; font-size: 2rem; cursor: pointer; color: #004080;">&#8594;</button>
-            </section>
-            <div class="project-box">
+            <header style="background: none; border: none; position: static; text-align: center; padding: 2rem 0;">
+                <h1 style="font-family: var(--font-heading); font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 2rem;">
+                    Hardware Knowledge
+                </h1>
+
+                <div
+                    style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+                    <button id="left-arrow1" title="Previous Category"><i class="ph ph-caret-left"></i></button>
+                    <a href="index.html" class="home" title="Back to Home"><i class="ph ph-house"></i></a>
+                    <button id="right-arrow1" title="Next Category"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </header>
+
+            <div class="language-container">
+                <ul>
+                    <li>Embedded Systems</li>
+                    <li>Aerodynamics</li>
+                    <li>PCB Design</li>
+                    <li>Flight Control</li>
+                </ul>
+            </div>
+
+            <article class="project-box">
                 <div class="project-details">
-                    <h2>Advanced Drone Engineering and Operation</h2>
-                    <p>Comprehensive knowledge in designing, building, and operating drones, 
-                        combining practical skills with in-depth understanding of aerodynamics, electronics, 
-                        and flight control systems to deliver innovative drone solutions.</p>
+                    <h2>Advanced Drone Engineering</h2>
+                    <p>Comprehensive expertise in designing, building, and operating advanced unmanned systems.
+                        Combining practical skills with in-depth understanding of electronics and flight control
+                        architectures to deliver integrated hardware solutions.</p>
                 </div>
                 <div class="project-image">
-                    <img src="Assets/app-development.png" alt="Drone Hardware Screenshot" />
+                    <img src="Assets/app-development.png" alt="Drone Hardware" />
                 </div>
-            </div>
+            </article>
         </div>
-    </section>
-    <button id="back-to-top" title="Back to top">&#8679;</button>
+    </main>
+
+    <button id="back-to-top" title="Back to top"><i class="ph ph-arrow-up"></i></button>
     <script type="module" src="script.js"></script>
 </body>
+
 </html>

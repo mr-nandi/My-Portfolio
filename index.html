@@ -1,213 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagarajan Mohan</title>
+    <title>Nagarajan Mohan | UAV Software Developer</title>
+    <meta name="description"
+        content="Senior UAV Software Developer specializing in Android, Web, and Embedded systems for drone technology.">
     <link rel="icon" href="Assets/boy.png" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <div class="profile-info">
-                    <img src="Assets/boy.png" alt="Nagarajan Mohan Logo" />
+        <div class="container logo">
+            <div class="profile-info">
+                <a href="index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem; color: inherit;">
+                    <img src="Assets/boy.png" alt="Nagarajan Mohan" />
                     <span class="profile-name">Nagarajan Mohan</span>
-                </div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Projects</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="profile.html">Profile</a></li>
-                    </ul>
-                </nav>
+                </a>
             </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <i class="ph ph-magnifying-glass search-icon"></i>
+                        <input type="text" class="search-input global-search" placeholder="Search..." />
+                        <div class="search-results global-search-results"></div>
+                    </div>
+                    <button class="theme-toggle" title="Toggle Theme">
+                        <i class="ph ph-sun theme-icon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <section id="home" class="hero-section">
-        <div class="container">
-            <h1>I’m glad you’re here on my website!</h1>
-            <p> As a passionate UAV software developer, 
-                I am dedicated to advancing drone technology and its applications. 
-                Explore my work and insights into the fascinating world of unmanned aerial vehicles.</p>
-            <a href="#contact" class="btn-primary">Get in Touch</a>
-        </div>
-    </section>
-
-<!-- Projects -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2>My Endeavors</h2>
-            <div class="services-grid">
-                <a href="android.html" class="service-item-link android-service">
-                    <div class="service-item">
-                        <img src="Assets/social.png" alt="Service 1" />
-                        <h3>Android Application</h3>
-                        <p>Innovative mobile solutions crafted to enhance 
-                            user engagement and performance on Android devices.</p>
-                    </div>
-                </a>
-                <a href="web.html" class="service-item-link">
-                    <div class="service-item">
-                        <img src="Assets/web-development.png" alt="Service 2" />
-                        <h3>Web Application</h3>
-                        <p>Dynamic and responsive web applications designed to deliver 
-                            seamless user experiences across all platforms.</p>
-                    </div>
-                </a>
-                <a href="windows.html" class="service-item-link">
-                    <div class="service-item">
-                        <img src="Assets/software.png" alt="Service 3" />
-                        <h3>Windows Application</h3>
-                        <p>Robust and efficient Windows software tailored to meet 
-                            diverse business and personal needs.</p>
-                    </div>
-                </a>
-                <a href="lua.html" class="service-item-link">
-                    <div class="service-item">
-                        <img src="Assets/script.png" alt="Service 4" />
-                        <h3>LUA Script</h3>
-                        <p>Lightweight and powerful LUA scripting for 
-                            flexible automation and drone development.</p>
-                    </div>
-                </a>
-                <a href="hardware.html" class="service-item-link">
-                    <div class="service-item">
-                        <img src="Assets/app-development.png" alt="Service 5" />
-                        <h3>Hardware</h3>
-                        <p>Cutting-edge hardware integration ensuring optimal 
-                            performance and reliability in embedded systems.</p>
-                    </div>
-                </a>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>Architecting the Future of UAV Software.</h1>
+                <p>Dedicated to advancing drone technology through innovative software solutions and seamless hardware
+                    integration.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View My Work <i class="ph ph-arrow-right"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
-    
-<!-- About -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I hold a Bachelor of Computer Applications (BCA) and a Master 
-                of Computer Applications (MCA), which have provided me with a 
-                solid foundation in software development and engineering principles. 
-                My academic background, combined with over three years of 
-                experience as a UAV software developer at a Chennai-based company, 
-                has equipped me with a comprehensive understanding of both software 
-                and hardware aspects of drone technology. This unique blend of 
-                education and experience enables me to create innovative solutions 
-                that enhance drone performance and functionality. I am dedicated to 
-                advancing the capabilities of drones across various industries.</p>
-            <img src="Assets/boy.png" alt="Nagarajan Mohan" class="about-image" />
-        </div>
-    </section>
+        </section>
 
-<!-- Profile -->
-    <section id="profile" class="profile-section">
-        <div class="container">
-            <h2>Profile</h2>
-            <div class="card-container" id="card-container">
-                <div class="card">
-                    <div class="card-front">
-                        <p> </p>
-                        <img src="Assets/boy (1).png" alt="Nagarajan Mohan" class="profile_image" />
-                        <p><strong>Nagarajan Mohan</strong> </p>
-                        <p><strong>UAV Software Developer</strong> </p>
-                        <p>mnagarajan0704@gmail.com </p>
-                        <p>Chennai, Tamilnadu, India</p>
-                    </div>
-                    
-                    <div class="card-back">
-                        <h3>Experience & Knowledge</h3>
-                        <p><strong>Experience:</strong> </p>
-                        <p>3 years in Software Development </p> 
-                        <p><strong>Knowledge:</strong></p>
-                        <ul>
-                            <li>Android Application Development</li>
-                            <li>Web Application Development</li>
-                            <li>Windows Application Development</li>
-                            <li>LUA Script</li>
-                            <li>Hardware Operations</li>
-                        </ul>
+        <!-- Selected Projects -->
+        <section id="projects" class="services-section">
+            <div class="container">
+                <h2>Selected Endeavors</h2>
+                <div class="services-grid">
+                    <a href="android.html" class="service-item-link">
+                        <article class="service-item">
+                            <i class="ph ph-device-mobile ph-bold"
+                                style="font-size: 32px; color: var(--accent-primary); margin-bottom: 1.5rem;"></i>
+                            <h3>Android Application</h3>
+                            <p>Innovative mobile solutions crafted to enhance user engagement and performance on Android
+                                devices.</p>
+                        </article>
+                    </a>
+                    <a href="web.html" class="service-item-link">
+                        <article class="service-item">
+                            <i class="ph ph-globe ph-bold"
+                                style="font-size: 32px; color: var(--accent-primary); margin-bottom: 1.5rem;"></i>
+                            <h3>Web Application</h3>
+                            <p>Dynamic and responsive web applications designed to deliver seamless user experiences
+                                across all platforms.</p>
+                        </article>
+                    </a>
+                    <a href="windows.html" class="service-item-link">
+                        <article class="service-item">
+                            <i class="ph ph-windows-logo ph-bold"
+                                style="font-size: 32px; color: var(--accent-primary); margin-bottom: 1.5rem;"></i>
+                            <h3>Windows Application</h3>
+                            <p>Robust and efficient Windows software tailored to meet diverse business and personal
+                                needs.</p>
+                        </article>
+                    </a>
+                    <a href="lua.html" class="service-item-link">
+                        <article class="service-item">
+                            <i class="ph ph-terminal-window ph-bold"
+                                style="font-size: 32px; color: var(--accent-primary); margin-bottom: 1.5rem;"></i>
+                            <h3>LUA Scripting</h3>
+                            <p>Lightweight and powerful LUA scripts for flexible automation and drone development.</p>
+                        </article>
+                    </a>
+                    <a href="hardware.html" class="service-item-link">
+                        <article class="service-item">
+                            <i class="ph ph-cpu ph-bold"
+                                style="font-size: 32px; color: var(--accent-primary); margin-bottom: 1.5rem;"></i>
+                            <h3>Hardware Integration</h3>
+                            <p>Cutting-edge hardware integration ensuring optimal performance and reliability in
+                                embedded systems.</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-content">
+                <div class="about-image-container">
+                    <img src="Assets/boy.png" alt="Nagarajan Mohan" class="about-image" />
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I hold a Master of Computer Applications (MCA) with over three years of specialized experience in
+                        UAV software development.</p>
+                    <p>My expertise lies at the intersection of software and hardware, enabling me to build intelligent
+                        systems that enhance drone performance and reliability.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h4>3+ Years</h4>
+                            <p>Industry Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>MCA</h4>
+                            <p>Education Level</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <button id="flip-button" class="btn-primary1">Flip Card</button>
-        </div>
-    </section>
+        </section>
 
-<!-- Contact -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required />
-&nbsp;
-&nbsp;
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <h2>Get in Touch</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message <i class="ph ph-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
-&nbsp;
-&nbsp;
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-&nbsp;
-&nbsp;
-
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-&nbsp;
-&nbsp;
-
-<!-- Footer -->
     <footer>
         <div class="container">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/nagarajan-mohan-mca/" target="_blank" class="social-icon"><img
+                        src="Assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/mr-nandi" target="_blank" class="social-icon"><img src="Assets/github.png"
+                        alt="GitHub"></a>
+                <a href="mailto:mnagarajan0704@gmail.com" class="social-icon"><img src="Assets/gmail.png"
+                        alt="Gmail"></a>
+                <!-- <a href="https://twitter.com" target="_blank" class="social-icon"><img src="Assets/twitter.png"
+                        alt="Twitter"></a> -->
+            </div>
             <p>&copy; 2025 Nagarajan Mohan. All rights reserved.</p>
         </div>
-        <div class="social-media">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon">
-            <img src="Assets/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.twitter.com" target="_blank" class="social-icon">
-            <img src="Assets/twitter.png" alt="Twitter">
-        </a>
-        <a href="https://www.instagram.com" target="_blank" class="social-icon">
-            <img src="Assets/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
-            <img src="Assets/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.github.com" target="_blank" class="social-icon">
-            <img src="Assets/github.png" alt="GitHub">
-        </a>
-        <a href="https://accounts.google.com/servicelogin?service=mail" target="_blank" class="social-icon">
-            <img src="Assets/gmail.png" alt="Gmail">
-        </a>
-    </div>
     </footer>
 
-    <button id="back-to-top" title="Back to top">&#8679;</button>
+    <button id="back-to-top" title="Back to top">
+        <i class="ph ph-arrow-up ph-bold"></i>
+    </button>
 
-&nbsp;
-&nbsp;
-
-    <!-- Firebase SDKs: place above your own script -->
+    <!-- Firebase -->
     <script type="module" src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js"></script>
-    <script type="module" src="https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js"></script>
-&nbsp;
-&nbsp;
 
-    <!-- Your external JavaScript -->
+    <!-- External JS -->
     <script type="module" src="script.js"></script>
 </body>
+
 </html>

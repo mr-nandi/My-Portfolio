@@ -1,78 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nagarajan Mohan</title>
+    <title>Windows Development | Nagarajan Mohan</title>
     <link rel="icon" href="Assets/boy.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>Windows Application Development</h1>
+        <div class="container logo">
+            <div class="profile-info">
+                <a href="index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem; color: inherit;">
+                    <img src="Assets/boy.png" alt="Nagarajan Mohan" />
+                    <span class="profile-name">Nagarajan Mohan</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <i class="ph ph-magnifying-glass search-icon"></i>
+                        <input type="text" class="search-input global-search" placeholder="Search..." />
+                        <div class="search-results global-search-results"></div>
+                    </div>
+                    <button class="theme-toggle" title="Toggle Theme">
+                        <i class="ph ph-sun theme-icon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
-    <section id="project" class="project-section">
+
+    <main class="project-section">
         <div class="container">
-            <section id="home" style="position: relative; display: flex; justify-content: center; align-items: center;">
-                <a href="index.html" class="home"></a>
-                <button id="left-arrow1" style="position: absolute; left: 10px; background: none; border: none; font-size: 2rem; cursor: pointer; color: #004080;">&#8592;</button>
-                <button id="right-arrow1" style="position: absolute; right: 10px; background: none; border: none; font-size: 2rem; cursor: pointer; color: #004080;">&#8594;</button>
-            </section>
-            <div class="language-container" id="language-container">
+            <header style="background: none; border: none; position: static; text-align: center; padding: 2rem 0;">
+                <h1 style="font-family: var(--font-heading); font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 2rem;">
+                    Windows Application
+                    Development</h1>
+
+                <div
+                    style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+                    <button id="left-arrow1" title="Previous Category"><i class="ph ph-caret-left"></i></button>
+                    <a href="index.html" class="home" title="Back to Home"><i class="ph ph-house"></i></a>
+                    <button id="right-arrow1" title="Next Category"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </header>
+
+            <div class="language-container">
                 <ul>
-                    <li>Visual Studio Community, Microsoft SQL Server Management Studio, Arduino IDE</li>
-                    <li>C#, .NET Framework, MySQL, Arduino (C++)</li>
+                    <li>C# / .NET</li>
+                    <li>WinForms / WPF</li>
+                    <li>MS SQL Server</li>
+                    <li>Arduino Integration</li>
                 </ul>
             </div>
-            <div class="project-box">
+
+            <article class="project-box">
                 <div class="project-details">
                     <h2>Mission Planner Customization</h2>
-                    <p>Tailored the open-source Mission Planner software to meet 
-                        the specific operational needs of our organization, 
-                        enhancing usability and functionality for drone management.</p>
+                    <p>Tailored the open-source Mission Planner software to meet specific operational needs, enhancing
+                        usability and adding custom functionality for organizational drone management.</p>
                 </div>
                 <div class="project-image">
-                    <img src="Assets/testing.png" alt="Mission Planner Screenshot" />
+                    <img src="Assets/testing.png" alt="Mission Planner" />
                 </div>
-            </div>
-            <div class="project-box alternate">
-                <div class="project-image">
-                    <img src="Assets/software.png" alt="Thrust Monitoring System Screenshot" />
-                </div>
+            </article>
+
+            <article class="project-box alternate">
                 <div class="project-details">
                     <h2>Thrust Monitoring System</h2>
-                    <p>Developed an IoT solution that accurately measures motor 
-                        thrust using Arduino technology, with data logging capabilities to 
-                        Excel for detailed analysis and reporting.</p>
+                    <p>An IoT solution that accurately measures motor thrust using Arduino technology. Featuring
+                        real-time data logging and Excel integration for detailed performance analysis.</p>
                 </div>
-            </div>
-            <div class="project-box">
+                <div class="project-image">
+                    <img src="Assets/software.png" alt="Thrust System" />
+                </div>
+            </article>
+
+            <article class="project-box">
                 <div class="project-details">
                     <h2>Invoice Management Software</h2>
-                    <p>Created a robust invoice management system utilizing Microsoft SQL Server 
-                        for efficient database handling, 
-                        streamlining billing processes and improving financial tracking.</p>
+                    <p>A robust billing system utilizing MS SQL Server for high-performance database handling,
+                        streamlining financial tracking and automated reporting.</p>
                 </div>
                 <div class="project-image">
-                    <img src="Assets/invoice.png" alt="Invoice Software Screenshot" />
+                    <img src="Assets/invoice.png" alt="Invoice Software" />
                 </div>
-            </div>
-            <div class="project-box alternate">
-                <div class="project-image">
-                    <img src="Assets/iPhone-BK-icon_37273.ico" alt="IP Camera Viewer Screenshot" />
-                </div>
+            </article>
+
+            <article class="project-box alternate">
                 <div class="project-details">
                     <h2>IP Camera Viewer</h2>
-                    <p>Designed a Windows application for controlling PTZ (Pan-Tilt-Zoom) 
-                        functions of IP cameras, including features for live 
-                        viewing and recording capabilities.</p>
+                    <p>Windows application for remote surveillance, featuring PTZ controls, live viewing, and automated
+                        recording capabilities for security systems.</p>
                 </div>
-            </div>
+                <div class="project-image">
+                    <img src="Assets/iPhone-BK-icon_37273.ico" alt="IP Camera Viewer" />
+                </div>
+            </article>
+            <article class="project-box">
+                <div class="project-details">
+                    <h2>Bom and Stock Management Software</h2>
+                    <p>A comprehensive inventory management system designed to streamline stock tracking and manage
+                        Bill of Materials (BOM) efficiently. This application ensures accurate inventory control and
+                        simplifies the process of managing stock levels and BOM structures.</p>
+                </div>
+                <div class="project-image">
+                    <img src="Assets/script.png" alt="IP Camera Viewer" />
+                </div>
+            </article>
         </div>
-    </section>
-    <button id="back-to-top" title="Back to top">&#8679;</button>
+    </main>
+
+    <button id="back-to-top" title="Back to top"><i class="ph ph-arrow-up"></i></button>
     <script type="module" src="script.js"></script>
 </body>
+
 </html>

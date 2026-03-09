@@ -1,45 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nagarajan Mohan</title>
+    <title>LUA Scripting | Nagarajan Mohan</title>
     <link rel="icon" href="Assets/boy.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>LUA Scripting</h1>
+        <div class="container logo">
+            <div class="profile-info">
+                <a href="index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem; color: inherit;">
+                    <img src="Assets/boy.png" alt="Nagarajan Mohan" />
+                    <span class="profile-name">Nagarajan Mohan</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <i class="ph ph-magnifying-glass search-icon"></i>
+                        <input type="text" class="search-input global-search" placeholder="Search..." />
+                        <div class="search-results global-search-results"></div>
+                    </div>
+                    <button class="theme-toggle" title="Toggle Theme">
+                        <i class="ph ph-sun theme-icon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
-    <section id="project" class="project-section">
+
+    <main class="project-section">
         <div class="container">
-            <section id="home" style="position: relative; display: flex; justify-content: center; align-items: center;">
-                <a href="index.html" class="home"></a>
-                <button id="left-arrow1" style="position: absolute; left: 10px; background: none; border: none; font-size: 2rem; cursor: pointer; color: #004080;">&#8592;</button>
-                <button id="right-arrow1" style="position: absolute; right: 10px; background: none; border: none; font-size: 2rem; cursor: pointer; color: #004080;">&#8594;</button>
-            </section>
-            <div class="language-container" id="language-container">
+            <header style="background: none; border: none; position: static; text-align: center; padding: 2rem 0;">
+                <h1 style="font-family: var(--font-heading); font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 2rem;">
+                    LUA Scripting</h1>
+
+                <div
+                    style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+                    <button id="left-arrow1" title="Previous Category"><i class="ph ph-caret-left"></i></button>
+                    <a href="index.html" class="home" title="Back to Home"><i class="ph ph-house"></i></a>
+                    <button id="right-arrow1" title="Next Category"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </header>
+
+            <div class="language-container">
                 <ul>
-                    <li>Visual Studio Code, Notepad++</li>
-                    <li>LUA scripting language</li>
+                    <li>LUA Language</li>
+                    <li>ArdiPilot SDK</li>
+                    <li>Mission Planner</li>
+                    <li>Autonomous Control</li>
                 </ul>
             </div>
-            <div class="project-box">
+
+            <article class="project-box">
                 <div class="project-details">
-                    <h2>LUA Scripting for Autonomous Drone Control</h2>
-                    <p>Crafted customized LUA scripts leveraging extensive online references 
-                        to automate drone maneuvers and enhance 
-                        flight precision through programmable controls.</p>
+                    <h2>Autonomous Drone Control</h2>
+                    <p>Crafted customized LUA scripts leveraging ArdiPilot SDKs to automate complex drone maneuvers.
+                        Focused on enhancing flight precision and safety through programmable autonomous controls.</p>
                 </div>
                 <div class="project-image">
-                    <img src="Assets/script.png" alt="LUA Scripting Screenshot" />
+                    <img src="Assets/script.png" alt="LUA Scripting" />
                 </div>
-            </div>
+            </article>
         </div>
-    </section>
-    <button id="back-to-top" title="Back to top">&#8679;</button>
+    </main>
+
+    <button id="back-to-top" title="Back to top"><i class="ph ph-arrow-up"></i></button>
     <script type="module" src="script.js"></script>
 </body>
+
 </html>
